@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+G:/CWorkSpace/cc/c1/helloworld.c
+stdio.h
+-
+
+G:/CWorkSpace/cc/c1/helloworld.h
+helloworld.c
+G:/CWorkSpace/cc/c1/helloworld.c
+
+G:/CWorkSpace/cc/main.c
+c1/helloworld.h
+G:/CWorkSpace/cc/c1/helloworld.h
+
